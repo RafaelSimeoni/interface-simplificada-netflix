@@ -1,0 +1,105 @@
+:root{
+    --red: #e50914;
+    --black: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* formatações gerais */
+
+body{
+    background: var(--black);
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--red);
+    text-transform: uppercase;
+    font-family: 'Arial Black', Times, serif;
+    font-size: 40px;
+}
+
+header nav li{
+    display: inline;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/* filme principal */
+.featured-media{
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url(../img/breaking_bad_capa.jpg);
+    background-size: cover;
+    height: 500px;
+    padding: 0 30% 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.featured-media .media-title{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.featured-media .synopsis{
+    margin: 10px 0px 40px 0px;
+}
+
+.featured-media button{
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.featured-media button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.featured-media .buttons i{
+    margin-right: 10px;
+}
+
+.recommended-series{
+    margin-top: 20px;
+}
+/* carrousel */
+
+.box-movie{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+

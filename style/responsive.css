@@ -1,0 +1,12 @@
+@media(max-width: 700px){
+    header{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .featured-media{
+        background-position: top;
+    }
+    .featured-media button{
+        margin-bottom: 10px;
+    }
+}
